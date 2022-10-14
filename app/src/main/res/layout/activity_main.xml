@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:hint="0"
+        android:textColorHint="@color/black"
+        android:layout_above="@id/tableLayout"
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textAlignment="textEnd"
+        android:autofillHints="false"
+        android:inputType="none"
+        tools:ignore="LabelFor"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_orange"
+                android:textColor="#000000"
+                android:id="@+id/clearButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="clearButton"
+                android:text="@string/clear" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#4CAF50"
+                android:id="@+id/posnegButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="posnegButton"
+                android:text="@string/posneg" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#4CAF50"
+                android:id="@+id/reminderButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="reminderButton"
+                android:text="@string/reminder" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#4CAF50"
+                android:id="@+id/obelusButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="obelusButton"
+                android:text="@string/obelus" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#ffffff"
+                android:id="@+id/sevenButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="sevenButton"
+                android:text="@string/seven" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#ffffff"
+                android:id="@+id/eightButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="eightButton"
+                android:text="@string/eight" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#ffffff"
+                android:id="@+id/nineButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="nineButton"
+                android:text="@string/nine" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#4CAF50"
+                android:id="@+id/multiplyButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="multiplyButton"
+                android:text="@string/multiply" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#ffffff"
+                android:id="@+id/fourButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="fourButton"
+                android:text="@string/four" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#ffffff"
+                android:id="@+id/fiveButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="fiveButton"
+                android:text="@string/five" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#ffffff"
+                android:id="@+id/sixButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="sixButton"
+                android:text="@string/six" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#4CAF50"
+                android:id="@+id/minusButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="minusButton"
+                android:text="@string/minus" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#ffffff"
+                android:id="@+id/oneButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="oneButton"
+                android:text="@string/one" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#ffffff"
+                android:id="@+id/twoButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="twoButton"
+                android:text="@string/two" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#ffffff"
+                android:id="@+id/threeButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="threeButton"
+                android:text="@string/three" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#4CAF50"
+                android:id="@+id/plusButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="plusButton"
+                android:text="@string/plus" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#4CAF50"
+                android:id="@+id/decimalButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="decimalButton"
+                android:text="@string/decimal" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#ffffff"
+                android:id="@+id/zeroButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="zeroButton"
+                android:text="@string/zero" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@drawable/ripple_effect_black"
+                android:textColor="#4CAF50"
+                android:id="@+id/deleteButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="deleteButton"
+                android:text="@string/delete" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/ripple_effect_green"
+                android:textColor="#000000"
+                android:id="@+id/equalButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="equalButton"
+                android:text="@string/equal" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>
